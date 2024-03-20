@@ -1,0 +1,10 @@
+[M::mm_idx_gen::37.696*1.55] collected minimizers
+[M::mm_idx_gen::66.035*3.77] sorted minimizers
+[M::main::66.058*3.77] loaded/built the index for 195 target sequence(s)
+[M::mm_mapopt_update::87.394*3.10] mid_occ = 204
+[M::mm_idx_stat] kmer size: 17; skip: 10; is_hpc: 0; #seq: 195
+[M::mm_idx_stat::92.990*2.97] distinct minimizers: 289387740 (74.85% are singletons); average occurrences: 1.852; average spacing: 5.785; total length: 3099922541
+[M::worker_pipeline::95.456*2.98] mapped 87753 sequences
+[M::main] Version: 2.26-r1175
+[M::main] CMD: /home/ahmed/Documents/workstation_bioinf/minimap2-2.26_x64-linux/minimap2 -ax map-ont -k 17 -t 8 -L --secondary=no --MD --cap-kalloc 1g -K 10g GCA_000001405.15_GRCh38_no_alt_analysis_set.fna ERR031935.filt.fastq.gz
+[M::main] Real time: 96.132 sec; CPU: 285.493 sec; Peak RSS: 11.320 GB

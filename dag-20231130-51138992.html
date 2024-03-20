@@ -1,0 +1,88 @@
+<!--
+  ~ Copyright 2013-2023, Seqera Labs
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+<pre class="mermaid" style="text-align: center;">
+flowchart TB
+    subgraph " "
+    v0["Channel.fromPath"]
+    v1["Channel.fromPath"]
+    v2["Channel.fromPath"]
+    end
+    subgraph minimap_align_bamout
+    v4([minimap])
+    v6([samtobam])
+    v3(( ))
+    end
+    subgraph " "
+    v5[" "]
+    v7["minimap2log"]
+    v8[" "]
+    v10[" "]
+    v11[" "]
+    v12[" "]
+    v13[" "]
+    v14[" "]
+    v15[" "]
+    v16[" "]
+    v18[" "]
+    v19[" "]
+    v20[" "]
+    v21[" "]
+    v22[" "]
+    v23[" "]
+    v24[" "]
+    end
+    v9([deepvariant])
+    v17([clair3])
+    v0 --> v4
+    v0 --> v6
+    v0 --> v9
+    v0 --> v17
+    v1 --> v17
+    v2 --> v3
+    v3 --> v4
+    v4 --> v6
+    v4 --> v5
+    v6 --> v9
+    v6 --> v8
+    v6 --> v7
+    v6 --> v17
+    v9 --> v16
+    v9 --> v15
+    v9 --> v14
+    v9 --> v13
+    v9 --> v12
+    v9 --> v11
+    v9 --> v10
+    v17 --> v24
+    v17 --> v23
+    v17 --> v22
+    v17 --> v21
+    v17 --> v20
+    v17 --> v19
+    v17 --> v18
+
+</pre>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+</body>
+</html>
